@@ -1,0 +1,55 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.titulo{
+    background-color: rgb(95, 95, 200);
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 30px;
+}
+
+.menu{
+
+    display: flex;
+    align-items: center;
+    padding: 0 10px 0 30px;
+}
+
+.titulo img{
+    height: 100px;
+    width: auto;
+}
+
+.btn-login{
+    margin: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.btn-login img{
+
+    width: auto;
+    height: 80px;
+}
+
+.btn-quem{
+     
+    margin: 0;
+    color: white;
+    font-family: Arial, sans-serif;
+
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
