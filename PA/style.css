@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 body{
     margin: 0;
     padding: 0;
@@ -52,4 +54,32 @@ body{
     border: none;
     cursor: pointer;
     padding: 0;
+}
+
+.principal{
+
+    width: 50%;
+    text-align: left;
+
+    margin:30px auto 0 30px;
+
+    font-family: 'Poppins', sans-serif;
+}
+
+.imagem-inicial{
+
+    margin: 30px 30px 0 0;
+}
+
+.imagem-inicial img{
+
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.conteudo{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
 }
