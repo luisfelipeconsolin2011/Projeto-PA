@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <link rel="stylesheet" href="css/login.css">
+
+    <title>Login - Bencom</title>
+
 </head>
+
+
 <body>
-    
+
+    <div class="login-box">
+
+
+        <div class="login-topo">
+
+            <img
+                src="img/Bencon.png"
+                alt="Logo Bencom"
+            >
+
+        </div>
+
+
+        <form class="login-conteudo" action="/entrar" method="POST">
+
+            <h2>Realize seu login</h2>
+
+
+            <label for="usuario">
+                USUÁRIO
+            </label>
+
+            <input
+                id="usuario"
+                type="text"
+                name="usuario"
+                placeholder="Digite seu usuário"
+            >
+
+
+            <label for="senha">
+                SENHA
+            </label>
+
+            <input
+                id="senha"
+                type="password"
+                name="senha"
+                placeholder="Digite sua senha"
+            >
+
+
+            <button
+                class="btn-entrar"
+                type="submit"
+            >
+                Entrar
+            </button>
+
+
+            <button
+                class="btn-limpar"
+                type="reset"
+            >
+                Limpar
+            </button>
+
+
+            <a href="#">
+                Esqueci minha senha
+            </a>
+
+        </form>
+
+    </div>
+
 </body>
+
 </html>

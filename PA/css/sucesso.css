@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url("../img/fundo-login.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sucesso-box {
+    width: 420px;
+
+    background-color: white;
+
+    border-radius: 18px;
+
+    padding: 40px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.icone-sucesso {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background-color: #2e9d63;
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.logo {
+    width: 180px;
+    height: auto;
+
+    margin-bottom: 15px;
+}
+
+.sucesso-box h1 {
+    color: rgb(35, 55, 120);
+
+    font-size: 24px;
+
+    margin-bottom: 10px;
+}
+
+.sucesso-box p {
+    color: #555;
+
+    font-size: 15px;
+
+    margin: 8px 0;
+}
+
+.mensagem-secundaria {
+    margin-bottom: 30px;
+}
+
+.btn-continuar {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    padding: 13px 35px;
+
+    background-color: rgb(35, 55, 120);
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: 0.2s;
+}
+
+.btn-continuar:hover {
+    background-color: rgb(50, 75, 150);
+}
