@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url("../img/fundo-login.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.confirmacao-box {
+    width: 430px;
+
+    padding: 40px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+.icone {
+    width: 70px;
+    height: 70px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: #2e9d63;
+    color: white;
+
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.confirmacao-box h1 {
+    color: rgb(35, 55, 120);
+
+    margin-bottom: 10px;
+}
+
+.confirmacao-box p {
+    color: #555;
+
+    font-size: 14px;
+}
+
+.resumo {
+    margin-top: 25px;
+
+    padding: 15px;
+
+    background-color: #f5f6fa;
+
+    border-radius: 8px;
+
+    text-align: left;
+}
+
+.resumo strong {
+    color: rgb(35, 55, 120);
+}
+
+.aviso {
+    margin-top: 20px;
+}
+
+.btn-voltar {
+    display: inline-block;
+
+    margin-top: 20px;
+
+    padding: 13px 30px;
+
+    background-color: rgb(35, 55, 120);
+    color: white;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}

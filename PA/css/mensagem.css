@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+
+    min-height: 100vh;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-image: url("../img/fundo-login.png");
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    
+.mensagem-box {
+    width: 500px;
+
+    background-color: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
+
+
+.mensagem-topo {
+    background-color: rgb(35, 55, 120);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+
+.mensagem-topo img {
+    width: 220px;
+    height: auto;
+}
+
+
+.mensagem-conteudo {
+    padding: 30px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.mensagem-conteudo h2 {
+    margin-top: 0;
+    margin-bottom: 5px;
+
+    text-align: center;
+
+    color: rgb(35, 55, 120);
+
+    font-size: 22px;
+}
+
+
+.descricao {
+    margin-top: 0;
+    margin-bottom: 25px;
+
+    text-align: center;
+
+    color: #666;
+
+    font-size: 14px;
+}
+
+
+.mensagem-conteudo label {
+    margin-top: 15px;
+    margin-bottom: 5px;
+
+    color: rgb(35, 55, 120);
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.mensagem-conteudo select {
+    height: 45px;
+
+    padding: 0 12px;
+
+    border: 1px solid #ccd4dd;
+    border-radius: 8px;
+
+    background-color: white;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+
+.mensagem-conteudo textarea {
+    min-height: 140px;
+
+    padding: 12px;
+
+    border: 1px solid #ccd4dd;
+    border-radius: 8px;
+
+    resize: vertical;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
+
+
+.mensagem-conteudo select:focus,
+.mensagem-conteudo textarea:focus {
+    outline: none;
+
+    border-color: rgb(35, 55, 120);
+}
+
+
+.btn-enviar {
+    height: 48px;
+
+    margin-top: 25px;
+
+    background-color: rgb(35, 55, 120);
+    color: white;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+
+.btn-enviar:hover {
+    background-color: rgb(50, 75, 150);
+}
+
+
+.btn-limpar {
+    height: 45px;
+
+    margin-top: 10px;
+
+    background-color: white;
+    color: #777;
+
+    border: 1px solid #ccd4dd;
+    border-radius: 8px;
+
+    font-family: 'Poppins', sans-serif;
+
+    cursor: pointer;
+}

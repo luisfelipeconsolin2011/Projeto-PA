@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/mensagem.css">
+
+    <title>Enviar Mensagem - Bencom</title>
+</head>
+
+<body>
+
+    <div class="mensagem-box">
+
+        <div class="mensagem-topo">
+
+            <img
+                src="img/Bencon.png"
+                alt="Logo Bencom"
+            >
+
+        </div>
+
+
+        <form class="mensagem-conteudo" action="/enviar" method="POST">
+
+            <h2>Entre em contato com a escola</h2>
+
+            <p class="descricao">
+                Selecione o assunto e explique o motivo do seu contato.
+            </p>
+
+
+            <label for="assunto">
+                ASSUNTO
+            </label>
+
+            <select id="assunto" name="assunto" required>
+
+                <option value="" disabled selected>
+                    Selecione um assunto
+                </option>
+
+                <option value="reuniao">
+                    Agendamento de reunião
+                </option>
+
+                <option value="duvida">
+                    Dúvidas sobre a vida escolar do aluno
+                </option>
+
+                <option value="administrativo">
+                    Solicitação ou problema administrativo
+                </option>
+
+                <option value="ocorrencia">
+                    Ocorrência ou reclamação
+                </option>
+
+                <option value="outro">
+                    Outro assunto
+                </option>
+
+            </select>
+
+
+            <label for="mensagem">
+                MENSAGEM
+            </label>
+
+            <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Explique com mais detalhes o motivo do contato..."
+                required
+            ></textarea>
+
+
+            <button
+                class="btn-enviar"
+                type="submit"
+            >
+                Enviar mensagem
+            </button>
+
+
+            <button
+                class="btn-limpar"
+                type="reset"
+            >
+                Limpar
+            </button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

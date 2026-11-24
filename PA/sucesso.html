@@ -37,7 +37,25 @@
 
         <a href="/" class="btn-continuar">
 
-            Continuar
+            {% if destino == "mensagem" %}
+
+                <a
+                    href="/enviar-mensagem"
+                    class="btn-continuar"
+                >
+                    Continuar
+                </a>
+
+            {% else %}
+
+                <a
+                    href="/"
+                    class="btn-continuar"
+                >
+                    Continuar
+                </a>
+
+            {% endif %}            
             
         </a>
 

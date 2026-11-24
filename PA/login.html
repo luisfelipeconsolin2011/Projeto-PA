@@ -33,8 +33,20 @@
 
 
         <form class="login-conteudo" action="/entrar" method="POST">
+            
+            <input
+                type="hidden"
+                name="destino"
+                value="{{ destino }}"
+            >
 
             <h2>Realize seu login</h2>
+
+            {% if erro %}
+                <p class="mensagem-erro">
+                    {{ erro }}
+                </p>
+            {% endif %}
 
 
             <label for="usuario">
