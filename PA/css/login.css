@@ -163,3 +163,19 @@ body {
 
     margin-bottom: 15px;
 }
+
+.link-cadastro {
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.link-cadastro a {
+    color: rgb(35, 55, 120);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link-cadastro a:hover {
+    text-decoration: underline;
+}

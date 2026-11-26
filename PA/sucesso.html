@@ -35,29 +35,26 @@
             na sua área.
         </p>
 
-        <a href="/" class="btn-continuar">
 
-            {% if destino == "mensagem" %}
+        {% if destino == "mensagem" %}
 
-                <a
-                    href="/enviar-mensagem"
-                    class="btn-continuar"
-                >
-                    Continuar
-                </a>
+            <a
+                href="/enviar-mensagem"
+                class="btn-continuar"
+            >
+                Continuar
+            </a>
 
-            {% else %}
+        {% else %}
 
-                <a
-                    href="/"
-                    class="btn-continuar"
-                >
-                    Continuar
-                </a>
+            <a
+                href="/"
+                class="btn-continuar"
+            >
+                Continuar
+            </a>
 
-            {% endif %}            
-            
-        </a>
+        {% endif %}
 
     </div>
 

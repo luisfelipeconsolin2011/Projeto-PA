@@ -53,6 +53,8 @@ def entrar():
     if usuario == "admin" and senha == "123":
 
         session["logado"] = True
+        session["nome"] = "Luís"
+        session["foto"] = "perfil.png"
 
         if destino == "mensagem":
             return render_template("sucesso.html", destino="mensagem")
@@ -80,6 +82,42 @@ def enviar():
         mensagem=mensagem
     )
 
+@app.route("/logout")
+def logout():
+
+    session.clear()
+
+    return redirect("/")
+
+@app.route("/cadastro.html")
+def cadastro():
+    return render_template("cadastro.html")
+
+@app.route("/cadastrar", methods=["POST"])
+def cadastrar():
+
+    nome = request.form["nome"]
+    email = request.form["email"]
+    usuario = request.form["usuario"]
+    senha = request.form["senha"]
+    confirmar_senha = request.form["confirmar_senha"]
+
+    if senha != confirmar_senha:
+
+        return render_template(
+            "cadastro.html",
+            erro="As senhas não coincidem."
+        )
+
+    if len(senha) < 8:
+
+        return render_template(
+            "cadastro.html",
+            erro="A senha deve ter pelo menos 8 caracteres."
+        )
+
+    return redirect("/login.html")
+    
 # Inicia o servidor
 if __name__ == "__main__":
     app.run(debug=True)

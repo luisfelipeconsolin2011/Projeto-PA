@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 30px 15px;
+
+    font-family: 'Poppins', sans-serif;
+
+    background-color: rgb(35, 55, 120);
+    background-image: url("../img/fundo-login.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* CAIXA DE CADASTRO */
+
+.caixa-cadastro {
+    background-color: white;
+
+    width: 450px;
+    max-width: 100%;
+
+    padding: 30px;
+
+    border-radius: 20px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+    text-align: center;
+}
+
+
+/* LOGO */
+
+.logo {
+    width: 230px;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* TÍTULOS */
+
+.caixa-cadastro h1 {
+    color: rgb(35, 55, 120);
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.subtitulo {
+    color: #777;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+
+/* FORMULÁRIO */
+
+form {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+label {
+    color: rgb(35, 55, 120);
+    font-size: 14px;
+    font-weight: 600;
+
+    margin-bottom: 6px;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+
+    margin-bottom: 18px;
+
+    border: 1px solid #ccc;
+    border-radius: 8px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: rgb(35, 55, 120);
+    box-shadow: 0 0 5px rgba(35, 55, 120, 0.3);
+}
+
+
+/* BOTÃO DE CADASTRO */
+
+.btn-cadastrar {
+    background-color: rgb(35, 55, 120);
+    color: white;
+
+    padding: 14px;
+
+    border: none;
+    border-radius: 8px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-cadastrar:hover {
+    background-color: rgb(20, 35, 85);
+}
+
+
+/* LINK PARA LOGIN */
+
+.link-login {
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+.link-login a {
+    color: rgb(35, 55, 120);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.link-login a:hover {
+    text-decoration: underline;
+}
+
+
+/* VOLTAR PARA O INDEX */
+
+.voltar {
+    color: #777;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.voltar:hover {
+    color: rgb(35, 55, 120);
+}
+
+
+/* MENSAGEM DE ERRO */
+
+.erro {
+    color: #d00000;
+    font-size: 13px;
+    text-align: center;
+}

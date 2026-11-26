@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <title>Sistema De Mensagens</title>
 </head>
@@ -29,12 +29,33 @@
                 </a>
 
 
-                <a
-                    class="btn-login"
-                    href="login.html"
-                >
-                    <img src="img/login.png" alt="Login">
-                </a>
+                {% if session.get("logado") %}
+
+                    <div class="usuario-logado">
+
+                        <img class="foto-perfil"
+                            src="/img/perfil.png"
+                            alt="Foto de perfil">
+
+                        <div class="info-usuario">
+
+                            <span>{{ session.get("nome") }}</span>
+
+                            <small>Minha conta</small>
+
+                        </div>
+
+                        <a class="btn-sair" href="/logout">Sair</a>
+
+                    </div>
+
+                {% else %}
+
+                    <a class="btn-login" href="/login.html">
+                        <img src="/img/login.png" alt="Login">
+                    </a>
+
+                {% endif %}
 
             </div>
 

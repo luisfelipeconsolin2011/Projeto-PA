@@ -1,188 +1,220 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
     padding: 0;
-    padding-top: 100px;
+    font-family: 'Poppins', sans-serif;
 }
 
-header{
+/* CABEÇALHO */
 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-
-    z-index: 1000;
-}
-
-.titulo{
+.titulo {
     background-color: rgb(35, 55, 120);
-    height: 100px;
-
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 30px;
+    padding: 0 25px;
+    min-height: 95px;
 }
 
-.menu{
-
-    display: flex;
-    align-items: center;
-    padding: 0 10px 0 30px;
-}
-
-.titulo img{
+.titulo img {
     height: 100px;
     width: auto;
 }
 
-.btn-login{
-    margin: 0;
-    color: white;
-    font-family: Arial, sans-serif;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.btn-login img{
-
-    width: auto;
-    height: 80px;
-}
-
-.btn-quem{
-     
-    margin: 0;
-    color: white;
-    font-family: Arial, sans-serif;
-
-    background-color: transparent;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-
-.principal{
-
-    width: 50%;
-    text-align: left;
-
-    margin:100px auto 50px 30px;
-
-    font-family: 'Poppins', sans-serif;
-
-}
-
-.imagem-inicial{
-
-    margin: 100px 200px 0 0;
-}
-
-.imagem-inicial img{
-
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-}
-
-.conteudo{
-    width: 100%;
-}
-
-.apresentacao{
+.menu {
     display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-}
-
-.fundo-escola {
-    width: auto;
-    height: 600px;
-
-    background-image: url("../img/Padrão Escolar de Doodles em Azul-Marinho.png");
-    background-size: cover;
-    background-position: center;
-
-    display: flex;
-    justify-content: space-between;    
-    align-items: flex-start;
-
-    box-sizing: border-box;
-
-    padding:  200px 0 0 60px;
-
-    font-family: 'Poppins', sans-serif;
-}
-
-
-.texto-login h1 {
-    color: white;
-    font-size: 45px;
-    margin: 5px 0;
-}
-
-.texto-login h1 b {
-    color: red;
-}
-
-.login-main{
-
-    margin: 50px 50px 0 auto;
-
-}
-
-.login-main img{
-
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-}
-
-.contato {
-    width: 100%;
-    min-height: 400px;
-
-    display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 30px;
+}
 
-    padding: 60px;
-    box-sizing: border-box;
+.btn-quem img {
+    height: 55px;
+    width: auto;
+}
 
+.btn-login img {
+    height: 55px;
+    width: auto;
+}
+
+.btn-quem:hover,
+.btn-login:hover {
+    opacity: 0.8;
+}
+
+
+/* USUÁRIO LOGADO */
+
+.titulo .usuario-logado {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: white;
     font-family: 'Poppins', sans-serif;
 }
 
-
-.texto-contato {
-    color: black;
-
-    font-size: 38px;
-
-    margin: 0;
-
-    max-width: 600px;
+.titulo .usuario-logado .foto-perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid white;
+    flex-shrink: 0;
 }
 
+.info-usuario {
+    display: flex;
+    flex-direction: column;
+}
 
-.texto-contato b {
+.info-usuario span {
+    font-size: 16px;
+    font-weight: 600;
+    color: white;
+}
+
+.info-usuario small {
+    font-size: 12px;
+    color: #c6d0ee;
+}
+
+.usuario-logado .btn-sair {
+    margin-left: 15px;
+    padding: 8px 18px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.usuario-logado .btn-sair:hover {
+    background-color: white;
     color: rgb(35, 55, 120);
 }
 
 
-.mensagem-img {
-    margin-left: auto;
+/* APRESENTAÇÃO INICIAL */
+
+.conteudo {
+    width: 100%;
+}
+
+.apresentacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding: 100px 20px;
+}
+
+.principal {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+}
+
+.principal h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.principal h2 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.principal p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.imagem-inicial {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-inicial img {
+    width: 500px;
+    max-width: 100%;
+    height: auto;
 }
 
 
-.mensagem-img img {
-    width: 100%;
-    max-width: 500px;
-    height: auto;
+/* SEÇÃO DE LOGIN */
 
-    display: block;
+.fundo-escola {
+    background-color: rgb(35, 55, 120);
+    background-image: url("../img/Padrão Escolar de Doodles em Azul-Marinho.png");
+    background-position: center;
+    background-size: cover;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+.texto-login {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 700;
+    -webkit-text-stroke: 1px black;
+    text-shadow: 3px 3px 6px black;
+}
+
+.login-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-main img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.login-main img:hover {
+    transform: scale(1.05);
+}
+
+
+/* SEÇÃO DE CONTATO */
+
+.contato {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.contato h1 {
+    font-size: 30px;
+    color: rgb(35, 55, 120);
+}
+
+.contato p {
+    font-size: 16px;
+}
+
+.contato img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    transition: 0.3s;
+}
+
+.contato img:hover {
+    transform: scale(1.05);
 }
